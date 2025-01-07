@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Nombre Comptes</mat-card-title>
+        <mat-card-subtitle>{{nb_comptes}}</mat-card-subtitle>
+    </mat-card-header>
+</mat-card>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Nombre Customers</mat-card-title>
+        <mat-card-subtitle>{{nb_customers}}</mat-card-subtitle>
+    </mat-card-header>
+</mat-card><mat-card>
+
+</mat-card>
+<div class="chart-wrapper tt">
+    <canvas baseChart [type]="'line'" [datasets]="chartData" [labels]="chartLabels" [options]="chartOptions">
+    </canvas>
+</div>
+<div class="chart-wrapper tt">
+    <canvas baseChart [type]="'pie'" [datasets]="chartData1" [labels]="chartLabels1"
+    [options]="pieChartOptions">
+    </canvas>
+</div>

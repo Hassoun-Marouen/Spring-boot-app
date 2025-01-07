@@ -1,0 +1,75 @@
+@if (form) {
+    <form [formGroup]="form" >
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>ID</mat-label>
+                <input matInput placeholder="id" formControlName="id">
+                <mat-icon matSuffix>home</mat-icon>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Initial Balance</mat-label>
+                <input matInput placeholder="initialbalance" formControlName="initialbalance" >
+                <mat-icon matSuffix></mat-icon>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+        </p>
+        
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>OverDraft</mat-label>
+                <input matInput placeholder="overdraft" formControlName="overdraft">
+                <mat-icon matSuffix></mat-icon>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+        </p>
+       
+       
+        
+       
+        
+        <mat-dialog-actions>
+            <button class="mat-raised-button"(click)="close()">Close</button>
+            <button class="mat-raised-button mat-primary"(click)="save()">Save</button>
+        </mat-dialog-actions>
+    </form>
+}@else {
+    <form [formGroup]="form2" >
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>ID</mat-label>
+                <input matInput placeholder="id" formControlName="id">
+                <mat-icon matSuffix>home</mat-icon>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Initial Balance</mat-label>
+                <input matInput placeholder="initialbalance" formControlName="initialbalance" >
+                <mat-icon matSuffix></mat-icon>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Interest-Rate</mat-label>
+                <input matInput placeholder="interestrate" formControlName="interestrate">
+                <mat-icon matSuffix></mat-icon>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+        </p>
+       
+        
+       
+        
+        <mat-dialog-actions>
+            <button class="mat-raised-button"(click)="close()">Close</button>
+            <button class="mat-raised-button mat-primary"(click)="ajouter()">Save</button>
+        </mat-dialog-actions>
+    </form>
+
+}
+
