@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:latest
 
 # Définir le répertoire de travail
 WORKDIR /app
