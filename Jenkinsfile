@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'Dev-Agent' }
     tools {
-        jdk 'jdk21'
+        jdk 'jdk17'
     }
     
     stages{
