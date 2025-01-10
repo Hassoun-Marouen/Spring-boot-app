@@ -13,7 +13,7 @@ pipeline {
       stage('Install Stage') {
             steps {
                 withMaven(maven: 'maven4') {
-                    dir('BankProject') {  
+                    dir('Angular-spring-boot') {  
                         sh 'mvn clean package -DskipTests'
                     }
                 }
